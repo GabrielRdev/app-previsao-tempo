@@ -8,6 +8,7 @@ function App() {
   function searchCity(){
     const city = inputRef.current.value
     const key = "07289acbc979d17e39370dc6bb1300c8"
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}´
   }
 
 
