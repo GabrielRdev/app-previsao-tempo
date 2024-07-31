@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<>
-			<div>
+			<div className="container">
 				<h1>DevClub - Previsão do Tempo</h1>
 				<input
 					ref={inputRef}
@@ -27,9 +27,9 @@ function App() {
 					placeholder="Digite o nome da cidade"
 				/>
 				<button onClick={searchCity}>Buscar</button>
-			</div>
 
-			{weather && <WeatherInformations weather={weather} />}
+				{weather && <WeatherInformations weather={weather} />}
+			</div>
 		</>
 	);
 }
