@@ -5,6 +5,7 @@ import WeatherInformations from "./components/Weatherinformation";
 
 function App() {
 	const [weather, setWeather] = useState();
+	const [weather5Days, setWeather5Days] = useState();
 	const inputRef = useRef();
 
 	async function searchCity() {
@@ -12,8 +13,12 @@ function App() {
 		const key = "07289acbc979d17e39370dc6bb1300c8";
 
 		const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`;
+		const url5Days = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${key}&lang=pt_br&units=metric`;
 
 		const apiInfo = await axios.get(url);
+		const apiInfo5Days = await axios.get(url5Days);
+
+		setWeather5Days(apiInfo5Days.data);
 		setWeather(apiInfo.data);
 	}
 
@@ -29,6 +34,7 @@ function App() {
 				<button onClick={searchCity}>Buscar</button>
 
 				{weather && <WeatherInformations weather={weather} />}
+				{weather5Days && <WeatherInformations5Days weather5Days={weather5Days}/>}
 			</div>
 		</>
 	);
