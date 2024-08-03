@@ -1,8 +1,28 @@
-# React + Vite
+# App de Previsão do Tempo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### 🛠 Projeto
+O App Previsão do Tempo é um projeto que mostra ao usuário a previsão do tempo de qualquer lugar do mundo através de uma API gratuíto da Open Weather.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🛠 Tecnologias
+
+- React JS
+- Axios
+- CSS
+- Git
+<hr>
+<br>
+
+### ✒️ Autor
+
+- Gabriel Ricardo
+<hr>
+<br>
+
+### 🖇️ Projeto finalizado
+
+<img src="./src/assets/telainicial.jpeg "/>
+<img src="./src/assets/telainiciada.jpeg "/>
+<br><br>
+
+link do projeto: https://app-previsao-do-tempo.netlify.app/
