@@ -35,7 +35,9 @@ function App() {
 				<button onClick={searchCity}>Buscar</button>
 
 				{weather && <WeatherInformations weather={weather} />}
-				{weather5Days && <WeatherInformations5Days weather5Days = {weather5Days} />}
+				{weather5Days && (
+					<WeatherInformations5Days weather5Days={weather5Days} />
+				)}
 			</div>
 		</>
 	);
