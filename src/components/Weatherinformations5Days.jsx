@@ -29,21 +29,26 @@ function WeatherInformations5Days({ weather5Days }) {
 	}
 
 	return (
-		<div className=".weather-container">
-			<p> Previsão dos próximos 5 dias </p>
-			{next5DaysForecast.map((forecast) => (
-				<div key={forecast.dt}>
-					<p>{convertDate(forecast)}</p>
-					<img
-						src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}
-					/>
-					<p>{forecast.weather[0].description}</p>
-					<p>
-						{Math.round(forecast.main.temp_min)} min /{" "}
-						{Math.round(forecast.main.temp_max)} max{" "}
-					</p>
-				</div>
-			))}
+		<div className="forecast-container">
+			<h3> Previsão dos próximos 5 dias </h3>
+
+			<div className="weather-list">
+				{next5DaysForecast.map((forecast) => (
+					<div key={forecast.dt} className="weather-item">
+						<p className="forecast-day">{convertDate(forecast)}</p>
+						<img
+							src={`http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`}
+						/>
+						<p className="forecast-description">
+							{forecast.weather[0].description}
+						</p>
+						<p>
+							{Math.round(forecast.main.temp_min)} min /{" "}
+							{Math.round(forecast.main.temp_max)} max{" "}
+						</p>
+					</div>
+				))}
+			</div>
 		</div>
 	);
 }

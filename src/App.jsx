@@ -26,7 +26,7 @@ function App() {
 	return (
 		<>
 			<div className="container">
-				<h1>DevClub - Previsão do Tempo</h1>
+				<h1> Previsão do Tempo</h1>
 				<input
 					ref={inputRef}
 					type="text"
