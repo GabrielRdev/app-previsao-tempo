@@ -3,6 +3,7 @@
 
 ### 🛠 Projeto
 O App Previsão do Tempo é um projeto que mostra ao usuário a previsão do tempo de qualquer lugar do mundo através de uma API gratuíto da Open Weather.
+Com isso, consegui aprender sobre o consumo de uma API com o axios e a conceito de utilização de um React Hook como useState.
 <hr>
 
 
